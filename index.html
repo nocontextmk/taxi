@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TaxiExpress — Schneller Taxiservice in der Schweiz (Rufen Sie an oder WhatsApp)</title>
+  <meta name="description" content="Zuverlässiger Taxiservice in der ganzen Schweiz. 24/7 verfügbar. Sofortige Buchung per Telefon oder WhatsApp +41 44 123 45 67. Deutsch, Englisch, Französisch, Italienisch." />
+  <meta name="keywords" content="Taxi, Schweiz, Zürich, Genf, Bern, Basel, Lausanne, Lugano, Transport, Flughafen, Bahnhof, 24/7, sofort, zuverlässig" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="TaxiExpress" />
+  <meta property="og:title" content="TaxiExpress — Schneller Taxiservice in der Schweiz" />
+  <meta property="og:description" content="Zuverlässiger Taxiservice in der ganzen Schweiz. 24/7 verfügbar. Sofortige Buchung per Telefon oder WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taxiexpress.ch" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TaxiExpress — Schneller Taxiservice in der Schweiz" />
+  <meta name="twitter:description" content="Zuverlässiger Taxiservice in der ganzen Schweiz. 24/7 verfügbar. Sofortige Buchung per Telefon oder WhatsApp." />
+  
+  <!-- Hreflang alternatives for multilingual SEO -->
+  <link rel="alternate" hreflang="de-CH" href="https://taxiexpress.ch/de" />
+  <link rel="alternate" hreflang="en" href="https://taxiexpress.ch/en" />
+  <link rel="alternate" hreflang="fr" href="https://taxiexpress.ch/fr" />
+  <link rel="alternate" hreflang="it" href="https://taxiexpress.ch/it" />
+  <link rel="alternate" hreflang="x-default" href="https://taxiexpress.ch" />
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://taxiexpress.ch" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚕</text></svg>">
+  
+  <!-- Structured data (LocalBusiness / TaxiService) for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "@id": "https://taxiexpress.ch",
+    "name": "TaxiExpress",
+    "description": "Professioneller Taxiservice in der ganzen Schweiz. 24 Stunden am Tag, 7 Tage die Woche verfügbar.",
+    "url": "https://taxiexpress.ch",
+    "logo": "https://taxiexpress.ch/logo.png",
+    "telephone": "+41441234567",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CH",
+      "addressRegion": "Zürich",
+      "addressLocality": "Zürich"
+    },
+    "areaServed": {
+      "@type": "State",
+      "name": "Schweiz"
+    },
+    "openingHours": "24/7",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/TaxiExpressCH",
+      "https://www.instagram.com/TaxiExpressCH",
+      "https://twitter.com/TaxiExpressCH"
+    ],
+    "serviceType": "TaxiService"
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #FFD700;
+      --primary-dark: #FFC400;
+      --secondary: #1a237e;
+      --bg: #f8f9fa;
+      --card: #ffffff;
+      --text: #212529;
+      --muted: #6c757d;
+      --accent: #d32f2f;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 20px;
+    }
+    
+    @media (min-width: 992px) {
+      .card {
+        grid-template-columns: 1fr 1fr;
+        min-height: 600px;
+      }
+    }
+    
+    .hero {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .kicker {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    
+    h1 {
+      margin: 0 0 20px;
+      font-size: 36px;
+      line-height: 1.2;
+      color: var(--secondary);
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+    
+    p.lead {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 90%;
+    }
+    
+    .highlight {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    
+    ul.features {
+      padding: 0;
+      margin: 24px 0 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      list-style: none;
+    }
+    
+    ul.features li {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 15px;
+      color: var(--text);
+      border-left: 4px solid var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    ul.features li::before {
+      content: "✓";
+      color: var(--primary-dark);
+      font-weight: bold;
+      font-size: 18px;
+    }
+    
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 16px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      flex: 1;
+      min-width: 200px;
+    }
+    
+    .btn.call {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: var(--secondary);
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    }
+    
+    .btn.call:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(255, 215, 0, 0.4);
+    }
+    
+    .btn.wh {
+      background: linear-gradient(135deg, #25D366, #1DA851);
+      color: white;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    }
+    
+    .btn.wh:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+    }
+    
+    .meta {
+      margin-top: 25px;
+      font-size: 14px;
+      color: var(--muted);
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    
+    .note {
+      font-size: 14px;
+      color: var(--muted);
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    
+    .side {
+      position: relative;
+      min-height: 400px;
+      background: linear-gradient(rgba(26, 35, 126, 0.8), rgba(26, 35, 126, 0.9)), url('https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+    }
+    
+    .side-content {
+      padding: 40px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .side h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: white;
+    }
+    
+    .side p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+    
+    .service-areas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .service-areas span {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 14px;
+      backdrop-filter: blur(5px);
+    }
+    
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .lang-btn {
+      background: transparent;
+      border: 2px solid #e9ecef;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--muted);
+      transition: all 0.3s ease;
+    }
+    
+    .lang-btn.active {
+      color: var(--secondary);
+      border-color: var(--primary);
+      background-color: rgba(255, 215, 0, 0.1);
+    }
+    
+    .lang-btn:hover {
+      border-color: var(--primary);
+    }
+    
+    footer.sitefoot {
+      padding: 25px 40px;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    @media (min-width: 768px) {
+      footer.sitefoot {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    
+    .socials {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .socials a:hover {
+      background: var(--primary);
+      color: var(--secondary);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    .copyright a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .copyright a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Accessibility */
+    .btn:focus, .lang-btn:focus, a:focus {
+      outline: 3px solid rgba(255, 215, 0, 0.5);
+      outline-offset: 3px;
+    }
+    
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+    /* Loading animation for language switch */
+    .lang {
+      transition: opacity 0.3s ease;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+      
+      .hero {
+        padding: 30px 25px;
+      }
+      
+      .side-content {
+        padding: 30px 25px;
+      }
+      
+      footer.sitefoot {
+        padding: 20px 25px;
+      }
+      
+      .btn {
+        min-width: 100%;
+      }
+      
+      ul.features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="main">
+      <!-- Left side: Content -->
+      <div class="hero" id="content">
+        <!-- Language switcher -->
+        <div class="lang-switch" aria-label="Sprachauswahl" role="tablist">
+          <button class="lang-btn active" data-lang="de" aria-selected="true">🇩🇪 Deutsch</button>
+          <button class="lang-btn" data-lang="en" aria-selected="false">🇬🇧 English</button>
+          <button class="lang-btn" data-lang="fr" aria-selected="false">🇫🇷 Français</button>
+          <button class="lang-btn" data-lang="it" aria-selected="false">🇮🇹 Italiano</button>
+        </div>
+        
+        <!-- German content (default) -->
+        <section class="lang" data-lang="de">
+          <div class="kicker">TaxiExpress — Schweiz</div>
+          <h1>Schneller <span class="highlight">Taxiservice</span> in der ganzen Schweiz</h1>
+          <p class="lead">24/7 verfügbar. Buchen Sie sofort per Telefon oder WhatsApp. Zuverlässige Fahrten zu Flughäfen, Bahnhöfen und überall hin.</p>
+          
+          <ul class="features">
+            <li>24 Stunden, 7 Tage die Woche</li>
+            <li>Flughafentransfers</li>
+            <li>Festpreise auf Anfrage</li>
+            <li>Bar- und Kartenzahlung</li>
+            <li>Saubere, moderne Fahrzeuge</li>
+            <li>Erfahrene Fahrer</li>
+          </ul>
+          
+          <div class="cta-row">
+            <a class="btn call" href="tel:+41441234567" aria-label="Rufen Sie +41 44 123 45 67 an">
+              📞 <span>Jetzt anrufen: +41 44 123 45 67</span>
+            </a>
+            <a class="btn wh" href="https://wa.me/41441234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +41 44 123 45 67">
+              💬 <span>WhatsApp senden</span>
+            </a>
+          </div>
+          
+          <div class="meta">
+            <p><strong>Schnelle Reaktion:</strong> Innerhalb von 5-15 Minuten bei Ihnen, abhängig von Ihrer Lage.</p>
+            <div class="note">
+              Bitte haben Sie Ihre Abholadresse und Ihr Ziel bereit. Für Flughafenfahrten geben Sie bitte die Flugnummer an.
+            </div>
+          </div>
+        </section>
+        
+        <!-- English content -->
+        <section class="lang" data-lang="en" hidden>
+          <div class="kicker">TaxiExpress — Switzerland</div>
+          <h1>Fast <span class="highlight">Taxi Service</span> across Switzerland</h1>
+          <p class="lead">Available 24/7. Book instantly by phone or WhatsApp. Reliable rides to airports, train stations, and everywhere.</p>
+          
+          <ul class="features">
+            <li>24 hours, 7 days a week</li>
+            <li>Airport transfers</li>
+            <li>Fixed prices on request</li>
+            <li>Cash and card payment</li>
+            <li>Clean, modern vehicles</li>
+            <li>Experienced drivers</li>
+          </ul>
+          
+          <div class="cta-row">
+            <a class="btn call" href="tel:+41441234567" aria-label="Call +41 44 123 45 67">
+              📞 <span>Call now: +41 44 123 45 67</span>
+            </a>
+            <a class="btn wh" href="https://wa.me/41441234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +41 44 123 45 67">
+              💬 <span>Send WhatsApp</span>
+            </a>
+          </div>
+          
+          <div class="meta">
+            <p><strong>Fast response:</strong> With you within 5-15 minutes, depending on your location.</p>
+            <div class="note">
+              Please have your pickup address and destination ready. For airport rides, please provide your flight number.
+            </div>
+          </div>
+        </section>
+        
+        <!-- French content -->
+        <section class="lang" data-lang="fr" hidden>
+          <div class="kicker">TaxiExpress — Suisse</div>
+          <h1>Service de <span class="highlight">Taxi Rapide</span> dans toute la Suisse</h1>
+          <p class="lead">Disponible 24h/24 et 7j/7. Réservez instantanément par téléphone ou WhatsApp. Courses fiables vers les aéroports, gares et partout.</p>
+          
+          <ul class="features">
+            <li>24 heures, 7 jours par semaine</li>
+            <li>Transferts aéroport</li>
+            <li>Prix fixes sur demande</li>
+            <li>Paiement en espèces et par carte</li>
+            <li>Véhicules propres et modernes</li>
+            <li>Chauffeurs expérimentés</li>
+          </ul>
+          
+          <div class="cta-row">
+            <a class="btn call" href="tel:+41441234567" aria-label="Appelez +41 44 123 45 67">
+              📞 <span>Appeler maintenant: +41 44 123 45 67</span>
+            </a>
+            <a class="btn wh" href="https://wa.me/41441234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +41 44 123 45 67">
+              💬 <span>Envoyer WhatsApp</span>
+            </a>
+          </div>
+          
+          <div class="meta">
+            <p><strong>Réponse rapide:</strong> Avec vous en 5 à 15 minutes, selon votre emplacement.</p>
+            <div class="note">
+              Veuillez avoir votre adresse de prise en charge et votre destination prêtes. Pour les courses à l'aéroport, veuillez fournir votre numéro de vol.
+            </div>
+          </div>
+        </section>
+        
+        <!-- Italian content -->
+        <section class="lang" data-lang="it" hidden>
+          <div class="kicker">TaxiExpress — Svizzera</div>
+          <h1>Servizio <span class="highlight">Taxi Veloce</span> in tutta la Svizzera</h1>
+          <p class="lead">Disponibile 24/7. Prenota istantaneamente per telefono o WhatsApp. Corse affidabili per aeroporti, stazioni ferroviarie e ovunque.</p>
+          
+          <ul class="features">
+            <li>24 ore, 7 giorni alla settimana</li>
+            <li>Trasferimenti aeroportuali</li>
+            <li>Prezzi fissi su richiesta</li>
+            <li>Pagamento in contanti e con carta</li>
+            <li>Veicoli puliti e moderni</li>
+            <li>Autisti esperti</li>
+          </ul>
+          
+          <div class="cta-row">
+            <a class="btn call" href="tel:+41441234567" aria-label="Chiama +41 44 123 45 67">
+              📞 <span>Chiama ora: +41 44 123 45 67</span>
+            </a>
+            <a class="btn wh" href="https://wa.me/41441234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +41 44 123 45 67">
+              💬 <span>Invia WhatsApp</span>
+            </a>
+          </div>
+          
+          <div class="meta">
+            <p><strong>Risposta rapida:</strong> Da voi in 5-15 minuti, a seconda della vostra posizione.</p>
+            <div class="note">
+              Si prega di avere pronti l'indirizzo di ritiro e la destinazione. Per le corse in aeroporto, si prega di fornire il numero del volo.
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      <!-- Right side: Image and footer -->
+      <aside class="side">
+        <div class="side-content">
+          <h2>Ihr zuverlässiger Partner für Transport</h2>
+          <p>Wir bieten professionellen Taxiservice in der ganzen Schweiz an. Egal ob Geschäftsreise, Flughafentransfer oder abendlicher Ausflug – wir sind für Sie da.</p>
+          
+          <div class="service-areas">
+            <span>Zürich</span>
+            <span>Genf</span>
+            <span>Bern</span>
+            <span>Basel</span>
+            <span>Lausanne</span>
+            <span>Luzern</span>
+            <span>Lugano</span>
+            <span>St. Gallen</span>
+          </div>
+        </div>
+        
+        <footer class="sitefoot" aria-label="Fußzeile">
+          <div class="socials">
+            <a href="https://www.facebook.com/TaxiExpressCH" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12c0 5 3.657 9.128 8.438 9.879v-6.99H7.898v-2.89h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.773-1.63 1.565v1.875h2.773l-.443 2.89h-2.33V21.88C18.343 21.128 22 17 22 12z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/TaxiExpressCH" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com/TaxiExpressCH" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+          
+          <div class="copyright">
+            © <span id="year"></span> TaxiExpress — <a href="tel:+41441234567">+41 44 123 45 67</a>
+          </div>
+        </footer>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // Language switcher functionality
+    const langs = Array.from(document.querySelectorAll('.lang'));
+    const btns = Array.from(document.querySelectorAll('.lang-btn'));
+    const yearEl = document.getElementById('year');
+    
+    // Set current year in footer
+    yearEl.textContent = new Date().getFullYear();
+    
+    // Function to switch language
+    function setLang(code, push = true) {
+      // Show selected language section
+      langs.forEach(s => {
+        s.hidden = s.dataset.lang !== code;
+        s.style.opacity = '0';
+        setTimeout(() => {
+          s.style.opacity = '1';
+        }, 10);
+      });
+      
+      // Update active button
+      btns.forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === code);
+        b.setAttribute('aria-selected', b.dataset.lang === code);
+      });
+      
+      // Update HTML lang attribute for accessibility and SEO
+      document.documentElement.lang = code;
+      
+      // Update page title based on language
+      const titles = {
+        de: 'TaxiExpress — Schneller Taxiservice in der Schweiz (Rufen Sie an oder WhatsApp)',
+        en: 'TaxiExpress — Fast Taxi Service in Switzerland (Call or WhatsApp)',
+        fr: 'TaxiExpress — Service de Taxi Rapide en Suisse (Appelez ou WhatsApp)',
+        it: 'TaxiExpress — Servizio Taxi Veloce in Svizzera (Chiama o WhatsApp)'
+      };
+      
+      document.title = titles[code] || titles.de;
+      
+      // Update URL hash for bookmarking
+      if (push) {
+        history.replaceState(null, '', '#' + code);
+      }
+    }
+    
+    // Add click events to language buttons
+    btns.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+    
+    // Initialize from URL hash or default to German
+    const hash = location.hash.replace('#', '') || 'de';
+    const allowed = ['de', 'en', 'fr', 'it'];
+    setLang(allowed.includes(hash) ? hash : 'de', false);
+    
+    // Keyboard shortcuts for language switching (Alt+1, Alt+2, etc.)
+    document.addEventListener('keydown', (e) => {
+      if (e.altKey && (e.key === '1' || e.key === '2' || e.key === '3' || e.key === '4')) {
+        const map = { '1': 'de', '2': 'en', '3': 'fr', '4': 'it' };
+        setLang(map[e.key]);
+      }
+    });
+    
+    // Track phone clicks for analytics (placeholder)
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+      link.addEventListener('click', () => {
+        console.log('Phone call initiated to: ' + link.getAttribute('href'));
+        // Here you could add actual analytics tracking
+      });
+    });
+    
+    // Track WhatsApp clicks for analytics (placeholder)
+    document.querySelectorAll('a[href^="https://wa.me"]').forEach(link => {
+      link.addEventListener('click', () => {
+        console.log('WhatsApp message initiated to: ' + link.getAttribute('href'));
+        // Here you could add actual analytics tracking
+      });
+    });
+    
+    // Initialize page with fade-in effect
+    window.addEventListener('DOMContentLoaded', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+      
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+  </script>
+</body>
+</html>
